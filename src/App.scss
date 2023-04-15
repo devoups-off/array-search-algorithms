@@ -1,0 +1,113 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.block-list {
+  display: flex;
+  max-width: 50rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-number {
+  padding: .7rem 1rem;
+  border: solid 1px whitesmoke;
+  border-radius: .2rem;
+  margin-bottom: 2rem;
+
+  &:not(:last-child) {
+    margin-right: .2rem;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+  }
+}
+
+.isPart {
+  background-color: lightcyan;
+  p {
+    color: black;
+  }
+}
+
+.isResult {
+  background-color: lightgreen;
+  p {
+    color: black;
+  }
+}
+
+.isBord {
+  background-color: red;
+  p {
+    color: whitesmoke;
+  }
+}
+
+.isMiddle:not(.isResult) {
+  background-color: yellow;
+  p {
+    color: black;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search {
+  margin-top: 2rem;
+  border-radius: .3rem;
+  border: solid 1px whitesmoke;
+  background-color: unset;
+  color: whitesmoke;
+  padding: .7rem;
+  &:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+label {
+  color: whitesmoke;
+  font-weight: 450;
+}
+
+input {
+  margin-left: 1rem;
+  width: 3rem;
+}
+
+.textResult {
+  color: whitesmoke;
+  &.noResult {
+    color: red;
+  }
+  &.hasResult {
+    color: greenyellow;
+  }
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.button-block {
+  display: flex;
+  button:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
